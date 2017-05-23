@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { TodosComponent } from './todos/todos.component'
+import { WrapperComponent } from './wrapper/wrapper.component'
 import { TodoService } from './todo.service'
 
 @Component({
@@ -7,7 +8,7 @@ import { TodoService } from './todo.service'
   selector: 'a2-todos-app',
   templateUrl: 'a2-todos.component.html',
   styleUrls: ['a2-todos.component.css'],
-  directives: [ TodosComponent ],
+  directives: [ WrapperComponent, TodosComponent ],
   providers: [TodoService]
 })
 export class A2TODOSAppComponent {
